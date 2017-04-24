@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+City.delete_all
+City.create(:name=>"Baltimore")
+City.create(:name=>"McLean")
+City.create(:name=>"New York")
+State.delete_all
+State.create(:name=>"Maryland")
+State.create(:name=>"Virginia")
+State.create(:name=>"New York")
