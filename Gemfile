@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.3.3'
 gem 'rails', '4.2.6'
 gem 'pry-rails', '~>0.3', '>=0.3.4'
 gem 'thor', '0.19.1'  #prevents warning Expected string default value for '--rc'; got false (boolean)
