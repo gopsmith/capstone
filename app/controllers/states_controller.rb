@@ -15,36 +15,36 @@ class StatesController < ApplicationController
     #render json: @state
   end
 
-  # POST /states
-  # POST /states.json
-  def create
-    @state = State.new(state_params)
+  # # POST /states
+  # # POST /states.json
+  # def create
+  #   @state = State.new(state_params)
 
-    if @state.save
-      #render json: @state, status: :created, location: @state
-      render :show, status: :created, location: @state    #render show template, not toJSON
-    else
-      render json: @state.errors, status: :unprocessable_entity
-    end
-  end
+  #   if @state.save
+  #     #render json: @state, status: :created, location: @state
+  #     render :show, status: :created, location: @state    #render show template, not toJSON
+  #   else
+  #     render json: @state.errors, status: :unprocessable_entity
+  #   end
+  # end
 
-  # PATCH/PUT /states/1
-  # PATCH/PUT /states/1.json
-  def update
-    if @state.update(state_params)
-      head :no_content
-    else
-      render json: @state.errors, status: :unprocessable_entity
-    end
-  end
+  # # PATCH/PUT /states/1
+  # # PATCH/PUT /states/1.json
+  # def update
+  #   if @state.update(state_params)
+  #     head :no_content
+  #   else
+  #     render json: @state.errors, status: :unprocessable_entity
+  #   end
+  # end
 
-  # DELETE /states/1
-  # DELETE /states/1.json
-  def destroy
-    @state.destroy
+  # # DELETE /states/1
+  # # DELETE /states/1.json
+  # def destroy
+  #   @state.destroy
 
-    head :no_content
-  end
+  #   head :no_content
+  # end
 
   private
 

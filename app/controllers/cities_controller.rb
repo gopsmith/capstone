@@ -15,36 +15,36 @@ class CitiesController < ApplicationController
     #render json: @city
   end
 
-  # POST /cities
-  # POST /cities.json
-  def create
-    @city = City.new(city_params)
+  # # POST /cities
+  # # POST /cities.json
+  # def create
+  #   @city = City.new(city_params)
 
-    if @city.save
-      #render json: @city, status: :created, location: @city
-      render :show, status: :created, location: @city    #render show template, not toJSON
-    else
-      render json: @city.errors, status: :unprocessable_entity
-    end
-  end
+  #   if @city.save
+  #     #render json: @city, status: :created, location: @city
+  #     render :show, status: :created, location: @city    #render show template, not toJSON
+  #   else
+  #     render json: @city.errors, status: :unprocessable_entity
+  #   end
+  # end
 
-  # PATCH/PUT /cities/1
-  # PATCH/PUT /cities/1.json
-  def update
-    if @city.update(city_params)
-      head :no_content
-    else
-      render json: @city.errors, status: :unprocessable_entity
-    end
-  end
+  # # PATCH/PUT /cities/1
+  # # PATCH/PUT /cities/1.json
+  # def update
+  #   if @city.update(city_params)
+  #     head :no_content
+  #   else
+  #     render json: @city.errors, status: :unprocessable_entity
+  #   end
+  # end
 
-  # DELETE /cities/1
-  # DELETE /cities/1.json
-  def destroy
-    @city.destroy
+  # # DELETE /cities/1
+  # # DELETE /cities/1.json
+  # def destroy
+  #   @city.destroy
 
-    head :no_content
-  end
+  #   head :no_content
+  # end
 
   private
 
