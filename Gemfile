@@ -1,12 +1,17 @@
 source 'https://rubygems.org'
 
 ruby '2.3.3'
+gem 'bundler', '>=1.8.4'
 gem 'rails', '4.2.6'
-#gem 'pry-rails', '~>0.3', '>=0.3.4'
+gem 'pry-rails', '~>0.3', '>=0.3.4'
 gem 'thor', '0.19.1'  #prevents warning Expected string default value for '--rc'; got false (boolean)
 gem 'rails-api', '~>0.4'  # ~> is 'pessimistic': equal or greater, in the final digit only'; ~>0.41 means >= 0.41 and < 0.5
 gem 'rack-cors', '~>0.4', :require => 'rack/cors'  #gem name is different from dir/filename
 
+gem 'sass-rails', '~>5.0', '>=3.4.22'
+gem 'uglifier', '~>3.0', '>=3.0.2'
+gem 'coffee-rails', '~>4.1', '>=4.1.0'
+gem 'jquery-rails', '~>4.2', '>=4.2.1'
 gem 'jbuilder', '~> 2.0', '>=2.6.0'
 
 group :development do
@@ -16,7 +21,7 @@ end
 group :development, :test do
   #gem 'tzinfo-data', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
   gem 'byebug', '~>9.0', '>=9.0.6'
-#  gem 'pry-byebug', '~>3.4'
+  gem 'pry-byebug', '~>3.4'
   gem 'httparty', '~>0.14'
 
   gem 'rspec-rails', '~>3.5', '>=3.5.2'
@@ -30,6 +35,12 @@ end
 gem 'pg', '~>0.19'
 gem 'mongoid', '~>5.1', '>=5.1.5'  # an 'and' of version conditions; 5.2.1 was installed b/c it's <6.0 ceiling!
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap', '~>3.3', '>=3.3.7'
+  gem 'rails-assets-angular', '~>1.5', '>=1.5.8'
+  gem 'rails-assets-angular-ui-router', '~>0.3', '>=0.3.1'
+  gem 'rails-assets-angular-resource', '~>1.5', '>=1.5.8'
+end
 
 
 # To use ActiveModel has_secure_password
