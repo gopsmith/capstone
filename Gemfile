@@ -23,7 +23,7 @@ group :development, :test do
 end
 
 group :production do
-  #gem 'puma', '~>3.6', :platforms=>:ruby
+  gem 'puma', '~>3.6', :platforms=>:ruby
   gem 'rails_12factor', '~>0.0', '>=0.0.3'
 end
 
