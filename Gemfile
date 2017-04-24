@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.3'
 gem 'rails', '4.2.6'
-gem 'pry-rails', '~>0.3', '>=0.3.4'
+#gem 'pry-rails', '~>0.3', '>=0.3.4'
 gem 'thor', '0.19.1'  #prevents warning Expected string default value for '--rc'; got false (boolean)
 gem 'rails-api', '~>0.4'  # ~> is 'pessimistic': equal or greater, in the final digit only'; ~>0.41 means >= 0.41 and < 0.5
 gem 'rack-cors', '~>0.4', :require => 'rack/cors'  #gem name is different from dir/filename
@@ -16,7 +16,7 @@ end
 group :development, :test do
   #gem 'tzinfo-data', :platforms=>[:mingw, :mswin, :x64_mingw, :jruby]
   gem 'byebug', '~>9.0', '>=9.0.6'
-  gem 'pry-byebug', '~>3.4'
+#  gem 'pry-byebug', '~>3.4'
   gem 'httparty', '~>0.14'
 
   gem 'rspec-rails', '~>3.5', '>=3.5.2'
